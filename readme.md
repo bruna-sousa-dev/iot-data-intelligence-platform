@@ -1,3 +1,16 @@
+![Python](https://img.shields.io/badge/Python-3.12-blue)
+![FastAPI](https://img.shields.io/badge/FastAPI-Backend-009688)
+![PostgreSQL](https://img.shields.io/badge/PostgreSQL-Database-336791)
+![SQLAlchemy](https://img.shields.io/badge/SQLAlchemy-ORM-red)
+![Alembic](https://img.shields.io/badge/Alembic-Migrations-orange)
+![React](https://img.shields.io/badge/React-Frontend-61DAFB)
+![Pandas](https://img.shields.io/badge/Pandas-Data%20Processing-150458)
+![OpenAI API](https://img.shields.io/badge/OpenAI%20API-AI-412991)
+![Docker](https://img.shields.io/badge/Docker-Containerization-2496ED)
+![Nginx](https://img.shields.io/badge/Nginx-Reverse%20Proxy-009639)
+![Status](https://img.shields.io/badge/Status-Under%20Development-yellow)
+![License](https://img.shields.io/badge/License-MIT-blue)
+
 # IoT Data Intelligence Platform
 
 A full stack platform for intelligent analysis of IoT data.
@@ -39,8 +52,8 @@ This project aims to show how a modern software architecture can transform raw I
 
 ## Roadmap
 
-- [ ] Project setup
-- [ ] FastAPI backend foundation
+- [x] Project setup
+- [x] FastAPI backend foundation
 - [ ] PostgreSQL integration
 - [ ] User authentication with JWT
 - [ ] IoT CSV upload
@@ -52,6 +65,21 @@ This project aims to show how a modern software architecture can transform raw I
 - [ ] Docker environment
 - [ ] Production deployment
 - [ ] Final documentation
+
+## Releases
+
+### v0.1.0 - Backend foundation
+
+This version introduces the initial FastAPI backend structure for the IoT Data Intelligence Platform.
+
+Implemented features:
+
+- FastAPI application setup
+- API versioning with `/api`
+- Centralized project settings
+- Health check endpoint
+- Initial backend documentation
+- Basic automated test
 
 ## Project Status
 

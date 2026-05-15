@@ -1,0 +1,46 @@
+[project]
+name = 'iot-data-intelligence-api'
+version = '0.1.0'
+description = 'Backend API for the IoT Data Intelligence Platform, built with FastAPI and designed to support IoT dataset processing, analytics metrics and AI-assisted insights.'
+authors = [
+    {name = 'Bruna Sousa Dev', email = 'brunampsousa.dev@gmail.com'}
+]
+
+requires-python = ">=3.12"
+dependencies = [
+    "fastapi[standard]",
+    "uvicorn[standard]",
+    "pydantic-settings"
+]
+
+[dependency-groups]
+dev = [
+    'pytest',
+    'ruff',
+    'taskipy',
+    'mkdocs',
+]
+
+[tool.pytest.ini_options]
+pythonpath = ["."]
+testpaths = ["tests"]
+
+[tool.ruff]
+line-length = 79
+extend-exclude = ['migrations']
+
+[tool.ruff.lint]
+preview = true
+select = ['I', 'F', 'E', 'W', 'PL', 'PT']
+
+[tool.ruff.format]
+preview = true
+quote-style = 'single'
+
+[tool.taskipy.tasks]
+run = 'fastapi dev run.py'
+test = 'pytest'
+lint = 'ruff check'
+lint_fix = 'ruff check --fix'
+format = 'ruff format'
+docs = 'mkdocs serve -a 127.0.0.1:8001'
